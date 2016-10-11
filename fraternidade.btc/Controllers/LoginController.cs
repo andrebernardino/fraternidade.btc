@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace fraternidade.btc.Controllers
 {
-    [RequireHttps]
-    public class HomeController : Controller
+    public class LoginController : Controller
     {
+        // GET: Login
         public ActionResult Index()
         {
             return View();

@@ -9,6 +9,10 @@
     <!-- Bootstrap -->
     <link href="@Url.Content("/css/bootstrap.css")" rel="stylesheet">
     <link href="@Url.Content("/css/modern-business.css")" rel="stylesheet">
+
+    <!-- Login Page -->
+    <link href="@Url.Content("/css/login.css")" rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -40,6 +44,9 @@
                     </li>
                     <li id="contact">
                         @Html.ActionLink("Contact", "Index", "Contact")
+                    </li>
+                    <li id="usuarios">
+                        @Html.ActionLink("Usuarios", "Index", "Usuarios")
                     </li>
                     <li id="portfolio" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
@@ -93,6 +100,7 @@
                             
                         </ul>
                     </li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -118,7 +126,8 @@
     <!-- /.container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="@Url.Content("/js/bootstrap.js")"></script>
-    <script src="@Url.Content("/js/modern-business.js")"></script>
+
+    <!--<script src="@Url.Content("/js/bootstrap.js")"></script>-->
+   <!-- <script src="@Url.Content("/js/modern-business.js")"></script>-->
 </body>
 </html>
